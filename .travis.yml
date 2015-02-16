@@ -1,0 +1,14 @@
+script: return 0
+
+before_deploy: make release
+
+deploy:
+  provider: s3
+  access_key_id: AKIAIKAOQMWIKVZMP4BQ
+  secret_access_key:
+    secure: a3hMr3fvPgS8GZ0TyMBuiLHE8jI+ffN8ilj+Zlsg/Re4Q9LiAZEO2NX9oyJJGBUl7sg5yebpdHswSiklNbLVFvZsCSC8VGgic+WPFj2XG/TOCJYmbIqqMryodlzlpUntIFHbjHPca9UHTnT0hUZR9kExRU2kNb9gympBvwT7tz8=
+  bucket: com.mihirsingh.gpg
+  local-dir: release
+  acl: public_read
+  on:
+    repo: citruspi/gpg.mihirsingh.com
