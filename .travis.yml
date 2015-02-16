@@ -9,6 +9,7 @@ deploy:
     secure: a3hMr3fvPgS8GZ0TyMBuiLHE8jI+ffN8ilj+Zlsg/Re4Q9LiAZEO2NX9oyJJGBUl7sg5yebpdHswSiklNbLVFvZsCSC8VGgic+WPFj2XG/TOCJYmbIqqMryodlzlpUntIFHbjHPca9UHTnT0hUZR9kExRU2kNb9gympBvwT7tz8=
   bucket: com.mihirsingh.gpg
   local-dir: release
+  skip_cleanup: true
   acl: public_read
   on:
     repo: citruspi/gpg.mihirsingh.com
